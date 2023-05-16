@@ -1,0 +1,102 @@
+@font-face {
+    font-family: NetflixSans;
+    src: url(/fonts/NetflixSans-Bold.otf);
+}
+
+@font-face {
+    font-family: NetflixSans-Regular;
+    src: url(fonts/NetflixSans-Regular.otf);
+}
+
+input {
+    width: 500px;
+    display: inline;
+    border-radius:10px;
+    
+}
+
+button{
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+}
+
+form{
+    padding-left: 200px;
+}
+
+.home{
+    text-decoration: none;
+    font-size: 30px;
+    color: #eee;
+}
+
+.bttnn{
+
+border: none;
+border-radius: 3px;
+}
+
+
+
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movie{
+    width: 200px;
+    margin: 1rem;
+    border-radius: 3px;
+    box-shadow: 0.2px 4px 5px rgba(0,0,0,0,1);
+    background-color: red;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.movie img{
+    width: 100%;
+}
+
+.movie-info{
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+
+.movie-info h3 {
+    margin-top: 0;
+}
+
+.movie-info span{
+    background-color: black;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.movie-info span.green{
+    color: lightgreen;
+}
+
+.overview{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    padding: 1rem;
+    max-height: 100%;
+    color: black;
+    transform:  translateY(101%);
+    overflow-y: scroll;
+}
+.movie:hover .overview{
+    transform: translateY(0);
+}
