@@ -8,6 +8,38 @@
     src: url(fonts/NetflixSans-Regular.otf);
 }
 
+#search{
+    width: 500px;
+}
+
+.nav{
+    margin-right: 100px;
+    margin-left: 50px;
+}
+
+
+#searchBttn:hover{
+
+    background-color: red;
+
+}
+
+
+
+#searchBtn, #homeBtn{
+    text-decoration: none;
+    border: none;
+    font-size: larger;
+}
+
+.nav{
+    margin-right: 100px;
+    margin-left: 50px;
+}
+
+
+
+
 input {
     width: 500px;
     display: inline;

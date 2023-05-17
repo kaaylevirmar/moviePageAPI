@@ -1,4 +1,7 @@
 
+
+
+
 const getFeatrueMovies = async () => {
 
     const res = await axios.get('https://api.tvmaze.com/shows');
@@ -14,7 +17,7 @@ const getFeatrueMovies = async () => {
         const image = data[number].image.medium;
         const name = data[number].name;
         const summary = data[number].summary;
-        const rating = data[number].rating.average;
+        const rating = data[number].rating.average || 'N/A';
         const genre = data[number].genres;
         
 
